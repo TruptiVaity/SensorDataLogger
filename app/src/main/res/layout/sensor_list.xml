@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/valuetext"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:id="@+id/valuetext2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="25dp"/>
+    <TextView
+        android:id="@+id/valuetext3"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="55dp"/>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="300dp"
+        android:textAlignment="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="150dp"
+        android:layout_below="@+id/valuetext"
+        android:text="List 1" />
+
+
+    <TextView
+        android:id="@+id/viewmsg"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_above="@id/backbutton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="140dp"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="BACK" />
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/backbutton"
+        android:layout_toRightOf="@id/backbutton"
+        android:onClick="displayToastMsg"
+        android:text="Start" />
+
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/start"
+        android:layout_toEndOf="@id/start"
+        android:onClick="stopDisplayingMsg"
+        android:text="Stop" />
+
+    <Button
+        android:id="@+id/recordevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/stop"
+        android:layout_toRightOf="@id/stop"
+        android:text="Record Event" />
+
+
+</RelativeLayout>
